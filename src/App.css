@@ -1,8 +1,8 @@
 :root {
-  --primary: #d81e5b;
-  --secondory: #8c38ff;
-  --dark: #131A26;
-  --light: #eee;
+  --primary: #6e27d1;
+  --secondory: #d81e5b;
+  --dark: #202c3f;
+  --light: rgb(255, 255, 255)
 }
 
 * {
@@ -20,7 +20,7 @@ body  {
 
 .App {
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
   align-items: center;
   justify-content: center;
   padding: 16;
@@ -29,7 +29,8 @@ body  {
 
 .calculator {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
+  
   background-color: #fff;
   border-radius: 16px;
   overflow: hidden;
@@ -37,12 +38,22 @@ body  {
 
 }
 
+.title{
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  margin-top: 20px;
+  color: #3f444d;
+  font-size: 70px;
+  padding: 0px;
+}
+
 .display {
-  padding: 16px;
+  padding: 20px;
   text-align: right;
-  background-color: var(--dark);
+  background-color: #2e3541;
   color: var(--light);
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 300;
 
 }
